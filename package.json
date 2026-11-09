@@ -1,0 +1,65 @@
+{
+  "name": "AIVideo",
+  "version": "1.0.0",
+  "description": "Create AI videos using remotion",
+  "repository": {},
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "private": true,
+  "dependencies": {
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
+    "@remotion/animation-utils": "4.0.541",
+    "@remotion/captions": "^4.0.541",
+    "@remotion/cli": "4.0.541",
+    "@remotion/google-fonts": "4.0.541",
+    "@remotion/layout-utils": "4.0.541",
+    "@remotion/media": "4.0.541",
+    "@remotion/three": "^4.0.541",
+    "@remotion/zod-types": "4.0.541",
+    "@types/three": "^0.187.0",
+    "playwright": "^1.65.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.541",
+    "three": "^0.187.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@elevenlabs/elevenlabs-js": "2.20.0",
+    "@remotion/eslint-config-flat": "4.0.541",
+    "@types/prompts": "2.4.9",
+    "@types/react": "19.3.0",
+    "@types/uuid": "11.0.0",
+    "@types/web": "0.0.166",
+    "@types/yargs": "17.0.33",
+    "chalk": "5.6.2",
+    "dotenv": "17.3.1",
+    "eslint": "10.12.0",
+    "ora": "9.0.0",
+    "prettier": "3.8.1",
+    "prompts": "2.4.2",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "uuid": "14.0.0",
+    "yargs": "18.0.0"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render src/index.ts MyVideo out/video.mp4",
+    "build": "remotion bundle",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src && tsc",
+    "render:3d": "remotion render ThreeDAnimation out/ThreeDAnimation.mp4",
+    "render:3d:landscape": "remotion render ThreeDAnimationLandscape out/ThreeDAnimationLandscape.mp4",
+    "render:gpu": "remotion render ThreeDAnimation out/ThreeDAnimation.mp4 --gl=angle --enable-multiprocess-on-linux",
+    "render:map": "remotion render GeoMotion out/GeoMotion.mp4",
+    "render:map:cli": "node skills/geomotion-studio/scripts/render.mjs skills/geomotion-studio/examples/neon-cyber-demo.json out/GeoMotion-standalone.mp4",
+    "gen": "bun cli/cli.ts"
+  },
+  "allowScripts": {
+    "esbuild": false
+  }
+}

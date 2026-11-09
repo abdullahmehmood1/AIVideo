@@ -1,0 +1,51 @@
+================================================================================
+🚀 GOOGLE COLAB COMMANDS: RENDER "MyVideo" WITH CLOUD GPU
+================================================================================
+
+1. RUNTIME SETUP:
+   In Google Colab, go to:
+   Runtime -> Change runtime type -> Hardware accelerator -> T4 GPU -> Save
+
+--------------------------------------------------------------------------------
+2. CELL 1: VERIFY GPU & INSTALL NODE.JS 22 + FFMPEG + DEPENDENCIES
+--------------------------------------------------------------------------------
+!nvidia-smi
+
+%%bash
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+sudo apt-get install -y nodejs ffmpeg libgbm1 libasound2 libnss3 libatk-bridge2.0-0 libgtk-3-0 libx11-xcb1 libxcomposite1 libxdamage1 libxrandr2
+node -v
+npm -v
+
+--------------------------------------------------------------------------------
+3. CELL 2: LOAD PROJECT (CHOOSE ONE OPTION)
+--------------------------------------------------------------------------------
+# OPTION A: If your code is on GitHub:
+# !git clone https://github.com/<YOUR_USERNAME>/AIVideo.git /content/AIVideo
+# %cd /content/AIVideo
+
+# OPTION B: Upload AIVideo.zip to Colab Files (left sidebar):
+# !unzip -q -o /content/AIVideo.zip -d /content/AIVideo
+# %cd /content/AIVideo
+
+--------------------------------------------------------------------------------
+4. CELL 3: INSTALL PROJECT PACKAGES & ENSURE CHROMIUM
+--------------------------------------------------------------------------------
+!npm install
+!npx remotion browser ensure
+
+--------------------------------------------------------------------------------
+5. CELL 4: RENDER THE 60-SECOND VIDEO (1800 FRAMES, GPU ACCELERATED)
+--------------------------------------------------------------------------------
+!npx remotion render src/index.ts MyVideo out/video.mp4 \
+  --gl=angle \
+  --enable-multiprocess-on-linux \
+  --concurrency=4
+
+--------------------------------------------------------------------------------
+6. CELL 5: DOWNLOAD FINAL VIDEO TO YOUR COMPUTER
+--------------------------------------------------------------------------------
+from google.colab import files
+files.download("out/video.mp4")
+================================================================================
+

@@ -1,0 +1,32 @@
+GEOMOTION STUDIO: OWNERSHIP AND RIGHTS NOTICE
+==============================================
+
+Copyright (c) 2026 heroi.
+All rights reserved.
+
+1. OWNERSHIP
+   "GeoMotion Studio" and all custom components, styles, telemetry HUDs,
+   presets, documentation, instructions (SKILL.md), Remotion integration,
+   and visual configurations belong to heroi ("Owner").
+
+2. PERMITTED USE
+   The Owner may freely use, modify, commercialize, license, and distribute
+   GeoMotion Studio without restriction. Videos produced with the Skill
+   are the exclusive intellectual property of the creator/Owner.
+
+3. THIRD-PARTY COMPONENTS
+   - Poppins font files (assets/fonts/) by Indian Type Foundry, licensed
+     under the SIL Open Font License 1.1.
+   - Natural Earth boundaries (public domain) bundled via world-atlas and
+     us-atlas (ISC License).
+   - topojson-client (ISC License).
+   - External dependencies (Playwright, Chromium, Remotion, FFmpeg, Python)
+     operate under their respective open-source licenses.
+
+4. STYLE & INSPIRATION
+   GeoMotion Studio features an original "Cinematic Dark & Neon" motion-graphics
+   visual engine developed for modern short-form and long-form video explainers.
+   All procedural shaders, HUD overlays, filters, and scripts are original code.
+
+5. NO WARRANTY
+   The software is provided "as is", without warranty of any kind.

@@ -1,0 +1,16 @@
+{
+  "name": "@heroi/geomotion-studio",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "description": "GeoMotion Studio - Cinematic Dark & Neon Map Explainer Motion Graphics Engine",
+  "author": "heroi",
+  "license": "UNLICENSED",
+  "scripts": {
+    "render": "node scripts/render.mjs",
+    "demo": "node scripts/render.mjs examples/neon-cyber-demo.json out/demo.mp4 --scale 0.5"
+  },
+  "dependencies": {
+    "playwright": "^1.47.0"
+  }
+}
