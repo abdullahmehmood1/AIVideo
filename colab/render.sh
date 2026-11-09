@@ -23,7 +23,7 @@ echo "Output target: $OUTPUT_PATH"
 npx remotion render "$COMPOSITION" "$OUTPUT_PATH" \
   --gl=angle \
   --enable-multiprocess-on-linux \
-  --concurrency=4 \
+  --concurrency=2 \
   --overwrite
 
 echo "=== Render complete: $OUTPUT_PATH ==="
