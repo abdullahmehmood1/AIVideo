@@ -14,7 +14,7 @@ fi
 # Ensure output directory exists
 mkdir -p out
 
-COMPOSITION=${1:-"ThreeDAnimation"}
+COMPOSITION=${1:-"ChokepointEscalationMaster"}
 OUTPUT_PATH=${2:-"out/${COMPOSITION}.mp4"}
 
 echo "Rendering composition: $COMPOSITION"
@@ -27,4 +27,3 @@ npx remotion render "$COMPOSITION" "$OUTPUT_PATH" \
   --overwrite
 
 echo "=== Render complete: $OUTPUT_PATH ==="
-

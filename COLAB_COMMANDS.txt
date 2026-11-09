@@ -1,5 +1,5 @@
 ================================================================================
-🚀 GOOGLE COLAB COMMANDS: RENDER "MyVideo" WITH CLOUD GPU
+🚀 GOOGLE COLAB COMMANDS: "CHOKEPOINT ESCALATION" PROGRAMMATIC VIDEO RENDERER
 ================================================================================
 
 1. RUNTIME SETUP:
@@ -18,15 +18,11 @@ node -v
 npm -v
 
 --------------------------------------------------------------------------------
-3. CELL 2: LOAD PROJECT (CHOOSE ONE OPTION)
+3. CELL 2: CLONE PROJECT FROM GITHUB REPO
 --------------------------------------------------------------------------------
-# OPTION A: If your code is on GitHub:
-# !git clone https://github.com/<YOUR_USERNAME>/AIVideo.git /content/AIVideo
-# %cd /content/AIVideo
-
-# OPTION B: Upload AIVideo.zip to Colab Files (left sidebar):
-# !unzip -q -o /content/AIVideo.zip -d /content/AIVideo
-# %cd /content/AIVideo
+!rm -rf /content/AIVideo
+!git clone https://github.com/abdullahmehmood1/AIVideo.git /content/AIVideo
+%cd /content/AIVideo
 
 --------------------------------------------------------------------------------
 4. CELL 3: INSTALL PROJECT PACKAGES & ENSURE CHROMIUM
@@ -35,17 +31,38 @@ npm -v
 !npx remotion browser ensure
 
 --------------------------------------------------------------------------------
-5. CELL 4: RENDER THE 60-SECOND VIDEO (1800 FRAMES, GPU ACCELERATED)
+5. CELL 4: RENDER THE VIDEO (GPU ACCELERATED, 2 CORES)
 --------------------------------------------------------------------------------
-!npx remotion render src/index.ts MyVideo out/video.mp4 \
+# OPTION A: Render Full Documentary (14 min 15 sec, 25,650 frames)
+!npx remotion render src/index.ts ChokepointEscalationMaster out/ChokepointEscalationMaster.mp4 \
   --gl=angle \
   --enable-multiprocess-on-linux \
   --concurrency=2
+
+# ------------------------------------------------------------------------------
+# OPTION B: Render Individual Acts Separately (Recommended for fast previews)
+# ------------------------------------------------------------------------------
+# Act 0: The Hook (90s / 2700 frames)
+# !npx remotion render src/index.ts Act0-TheHook out/Act0-TheHook.mp4 --gl=angle --enable-multiprocess-on-linux --concurrency=2
+
+# Act 1: The Twelve-Day War (165s / 4950 frames)
+# !npx remotion render src/index.ts Act1-TwelveDayWar out/Act1-TwelveDayWar.mp4 --gl=angle --enable-multiprocess-on-linux --concurrency=2
+
+# Act 2: Hormuz Lockdown & Missile Envelopes (195s / 5850 frames)
+# !npx remotion render src/index.ts Act2-HormuzLockdown out/Act2-HormuzLockdown.mp4 --gl=angle --enable-multiprocess-on-linux --concurrency=2
+
+# Act 3: Why Bypass Pipelines Failed (165s / 4950 frames)
+# !npx remotion render src/index.ts Act3-BypassPipelines out/Act3-BypassPipelines.mp4 --gl=angle --enable-multiprocess-on-linux --concurrency=2
+
+# Act 4: Cape of Good Hope Detour (165s / 4950 frames)
+# !npx remotion render src/index.ts Act4-CapeGoodHope out/Act4-CapeGoodHope.mp4 --gl=angle --enable-multiprocess-on-linux --concurrency=2
+
+# Act 5: Era of Weaponized Geography Outro (75s / 2250 frames)
+# !npx remotion render src/index.ts Act5-WeaponizedGeography out/Act5-WeaponizedGeography.mp4 --gl=angle --enable-multiprocess-on-linux --concurrency=2
 
 --------------------------------------------------------------------------------
 6. CELL 5: DOWNLOAD FINAL VIDEO TO YOUR COMPUTER
 --------------------------------------------------------------------------------
 from google.colab import files
-files.download("out/video.mp4")
+files.download("out/ChokepointEscalationMaster.mp4")
 ================================================================================
-

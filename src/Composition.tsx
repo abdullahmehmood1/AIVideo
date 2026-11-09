@@ -1,50 +1,76 @@
 import React from "react";
 import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
-import { Scene1 } from "./Scene1";
-import { Scene2 } from "./Scene2";
-import { Scene3 } from "./Scene3";
-import { Scene4 } from "./Scene4";
-import { Scene5 } from "./Scene5";
-import { SubtitlesOverlay } from "./components/Subtitles/SubtitlesOverlay";
+import { HormuzChokepointMap } from "./components/Hormuz/HormuzChokepointMap";
+import { TwelveDayWarTimeline } from "./components/TwelveDayWar/TwelveDayWarTimeline";
+import { MissileEnvelopeHUD } from "./components/MissileEnvelope/MissileEnvelopeHUD";
+import { BypassPipelineVsTanker } from "./components/Pipelines/BypassPipelineVsTanker";
+import { CapeGoodHopeReroute } from "./components/CapeReroute/CapeGoodHopeReroute";
+import { WeaponizedGeographyOutro } from "./components/Outro/WeaponizedGeographyOutro";
+import { ACT_TIMINGS } from "./data/timelineData";
 
-export const Composition: React.FC = () => {
+export const ChokepointEscalationMaster: React.FC = () => {
   return (
     <AbsoluteFill
       style={{
-        backgroundColor: "#0A0A0A",
+        backgroundColor: "#F8FAFC",
         overflow: "hidden",
       }}
     >
-      {/* Voiceover Audio Track (User can replace public/voiceover.mp3) */}
+      {/* Primary Documentary Voiceover Audio Track */}
       <Audio src={staticFile("voiceover.mp3")} />
 
-      {/* Scene 1: 0:00 - 0:10 (Frames 0 - 300) */}
-      <Sequence durationInFrames={300} name="Scene 1: Orbital Night View">
-        <Scene1 />
+      {/* The Hook: 0:00 – 1:30 (Frames 0 – 2700) */}
+      <Sequence
+        durationInFrames={ACT_TIMINGS.hook.duration}
+        name={ACT_TIMINGS.hook.title}
+      >
+        <HormuzChokepointMap />
       </Sequence>
 
-      {/* Scene 2: 0:10 - 0:20 (Frames 300 - 600) */}
-      <Sequence from={300} durationInFrames={300} name="Scene 2: Satellite Dive">
-        <Scene2 />
+      {/* Act I: 1:30 – 4:15 (Frames 2700 – 7650) */}
+      <Sequence
+        from={ACT_TIMINGS.act1.startFrame}
+        durationInFrames={ACT_TIMINGS.act1.duration}
+        name={ACT_TIMINGS.act1.title}
+      >
+        <TwelveDayWarTimeline />
       </Sequence>
 
-      {/* Scene 3: 0:20 - 0:34 (Frames 600 - 1020) */}
-      <Sequence from={600} durationInFrames={420} name="Scene 3: Terrain Tracking Pan">
-        <Scene3 />
+      {/* Act II: 4:15 – 7:30 (Frames 7650 – 13500) */}
+      <Sequence
+        from={ACT_TIMINGS.act2.startFrame}
+        durationInFrames={ACT_TIMINGS.act2.duration}
+        name={ACT_TIMINGS.act2.title}
+      >
+        <MissileEnvelopeHUD />
       </Sequence>
 
-      {/* Scene 4: 0:34 - 0:47 (Frames 1020 - 1410) */}
-      <Sequence from={1020} durationInFrames={390} name="Scene 4: Tactical Fence Blueprint">
-        <Scene4 />
+      {/* Act III: 7:30 – 10:15 (Frames 13500 – 18450) */}
+      <Sequence
+        from={ACT_TIMINGS.act3.startFrame}
+        durationInFrames={ACT_TIMINGS.act3.duration}
+        name={ACT_TIMINGS.act3.title}
+      >
+        <BypassPipelineVsTanker />
       </Sequence>
 
-      {/* Scene 5: 0:47 - 1:00 (Frames 1410 - 1800) */}
-      <Sequence from={1410} durationInFrames={390} name="Scene 5: Orbit Pullback Payoff">
-        <Scene5 />
+      {/* Act IV: 10:15 – 13:00 (Frames 18450 – 23400) */}
+      <Sequence
+        from={ACT_TIMINGS.act4.startFrame}
+        durationInFrames={ACT_TIMINGS.act4.duration}
+        name={ACT_TIMINGS.act4.title}
+      >
+        <CapeGoodHopeReroute />
       </Sequence>
 
-      {/* Word-by-Word Highlight Subtitles Overlay */}
-      <SubtitlesOverlay />
+      {/* Outro: 13:00 – 14:15 (Frames 23400 – 25650) */}
+      <Sequence
+        from={ACT_TIMINGS.outro.startFrame}
+        durationInFrames={ACT_TIMINGS.outro.duration}
+        name={ACT_TIMINGS.outro.title}
+      >
+        <WeaponizedGeographyOutro />
+      </Sequence>
     </AbsoluteFill>
   );
 };
