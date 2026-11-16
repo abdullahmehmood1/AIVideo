@@ -14,13 +14,13 @@ fi
 # Ensure output directory exists
 mkdir -p out
 
-COMPOSITION=${1:-"ChokepointEscalationMaster"}
-OUTPUT_PATH=${2:-"out/${COMPOSITION}.mp4"}
+COMPOSITION=${1:-"MyVideo"}
+OUTPUT_PATH=${2:-"out/video.mp4"}
 
 echo "Rendering composition: $COMPOSITION"
 echo "Output target: $OUTPUT_PATH"
 
-npx remotion render "$COMPOSITION" "$OUTPUT_PATH" \
+npx remotion render src/index.ts "$COMPOSITION" "$OUTPUT_PATH" \
   --gl=angle \
   --enable-multiprocess-on-linux \
   --concurrency=2 \

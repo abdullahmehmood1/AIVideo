@@ -101,3 +101,4 @@ export const SubtitlesBar: React.FC<SubtitlesBarProps> = ({
     </div>
   );
 };
+
