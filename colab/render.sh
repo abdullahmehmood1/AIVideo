@@ -14,7 +14,7 @@ fi
 # Ensure output directory exists
 mkdir -p out
 
-COMPOSITION=${1:-"MyVideo"}
+COMPOSITION=${1:-"Main"}
 OUTPUT_PATH=${2:-"out/video.mp4"}
 
 echo "Rendering composition: $COMPOSITION"

@@ -9,9 +9,11 @@
     "noEmit": true,
     "lib": ["es2015"],
     "esModuleInterop": true,
+    "resolveJsonModule": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "noUnusedLocals": true
   },
-  "exclude": ["remotion.config.ts"]
+  "include": ["src", "scripts"],
+  "exclude": ["remotion.config.ts", "node_modules"]
 }

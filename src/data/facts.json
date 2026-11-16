@@ -1,0 +1,236 @@
+{
+  "facts": [
+    {
+      "id": "founded_year",
+      "value": 1993,
+      "unit": "",
+      "label": "Nvidia founded by Jensen Huang, Chris Malachowski, Curtis Priem at a Denny's diner in San Jose",
+      "source": "Nvidia corporate history",
+      "verified": false
+    },
+    {
+      "id": "early_capital",
+      "value": 40000,
+      "unit": "$",
+      "label": "Early startup capital (commonly cited ~$40,000)",
+      "source": "Company history / interviews",
+      "verified": false
+    },
+    {
+      "id": "nv1_year",
+      "value": 1995,
+      "unit": "",
+      "label": "NV1 launch (commercial disappointment)",
+      "source": "Nvidia archive",
+      "verified": false
+    },
+    {
+      "id": "cash_crisis_years",
+      "value": "1996–1997",
+      "unit": "",
+      "label": "Close to running out of cash (~1996–97)",
+      "source": "Historical reporting",
+      "verified": false
+    },
+    {
+      "id": "riva_128_year",
+      "value": 1997,
+      "unit": "",
+      "label": "RIVA 128 launch saves the company",
+      "source": "Nvidia archive",
+      "verified": false
+    },
+    {
+      "id": "ipo_date",
+      "value": "January 1999",
+      "unit": "",
+      "label": "Nvidia Initial Public Offering",
+      "source": "SEC filings",
+      "verified": false
+    },
+    {
+      "id": "geforce_256_year",
+      "value": 1999,
+      "unit": "",
+      "label": "GeForce 256 marketed as the 'world's first GPU'",
+      "source": "Nvidia archive",
+      "verified": false
+    },
+    {
+      "id": "cpu_vs_gpu_cores",
+      "value": "8 cores vs thousands of cores",
+      "unit": "",
+      "label": "CPU sequential workers vs GPU parallel core grid",
+      "source": "Architecture whitepapers",
+      "verified": false
+    },
+    {
+      "id": "cuda_announced",
+      "value": "Nov 2006",
+      "unit": "",
+      "label": "CUDA architecture announced (released 2007)",
+      "source": "Nvidia CUDA docs",
+      "verified": false
+    },
+    {
+      "id": "cuda_released",
+      "value": 2007,
+      "unit": "",
+      "label": "CUDA SDK initial public release",
+      "source": "Nvidia CUDA docs",
+      "verified": false
+    },
+    {
+      "id": "alexnet_year",
+      "value": 2012,
+      "unit": "",
+      "label": "AlexNet wins ImageNet on two Nvidia GTX 580 GPUs",
+      "source": "Krizhevsky et al., 2012",
+      "verified": false
+    },
+    {
+      "id": "alexnet_error",
+      "value": 15.3,
+      "unit": "%",
+      "label": "AlexNet ImageNet top-5 error rate (~15.3%)",
+      "source": "ImageNet 2012 results",
+      "verified": false
+    },
+    {
+      "id": "alexnet_runnerup_error",
+      "value": 26.2,
+      "unit": "%",
+      "label": "ImageNet 2012 runner-up top-5 error rate (~26.2%)",
+      "source": "ImageNet 2012 results",
+      "verified": false
+    },
+    {
+      "id": "dgx1_year",
+      "value": 2016,
+      "unit": "",
+      "label": "First DGX-1 delivered to OpenAI",
+      "source": "Nvidia / OpenAI announcement",
+      "verified": false
+    },
+    {
+      "id": "transformers_year",
+      "value": 2017,
+      "unit": "",
+      "label": "'Attention Is All You Need' Transformer paper published",
+      "source": "Vaswani et al., 2017",
+      "verified": false
+    },
+    {
+      "id": "mellanox_year",
+      "value": 2019,
+      "unit": "",
+      "label": "Mellanox acquisition announced",
+      "source": "Nvidia press release",
+      "verified": false
+    },
+    {
+      "id": "mellanox_value",
+      "value": 6.9,
+      "unit": "$B",
+      "label": "Mellanox acquisition value (~$6.9B)",
+      "source": "Nvidia press release",
+      "verified": false
+    },
+    {
+      "id": "h100_year",
+      "value": 2022,
+      "unit": "",
+      "label": "Nvidia Hopper H100 Tensor Core GPU announced",
+      "source": "Nvidia GTC 2022",
+      "verified": false
+    },
+    {
+      "id": "chatgpt_date",
+      "value": "Nov 30, 2022",
+      "unit": "",
+      "label": "ChatGPT public release sparks generative AI wave",
+      "source": "OpenAI",
+      "verified": false
+    },
+    {
+      "id": "mcap_1t",
+      "value": 1,
+      "unit": "$T",
+      "label": "Market cap reaches $1 Trillion (May 2023)",
+      "source": "Market data",
+      "verified": false
+    },
+    {
+      "id": "mcap_2t",
+      "value": 2,
+      "unit": "$T",
+      "label": "Market cap reaches $2 Trillion (Feb 2024)",
+      "source": "Market data",
+      "verified": false
+    },
+    {
+      "id": "mcap_3t",
+      "value": 3,
+      "unit": "$T",
+      "label": "Market cap reaches $3 Trillion (Jun 2024)",
+      "source": "Market data",
+      "verified": false
+    },
+    {
+      "id": "mcap_4t",
+      "value": 4,
+      "unit": "$T",
+      "label": "Market cap reaches $4 Trillion (Jul 2025)",
+      "source": "Market data",
+      "verified": false
+    },
+    {
+      "id": "mcap_5t",
+      "value": 5,
+      "unit": "$T",
+      "label": "Market cap reaches $5 Trillion (Oct 2025)",
+      "source": "Market data",
+      "verified": false
+    },
+    {
+      "id": "export_controls_date",
+      "value": "Oct 2022",
+      "unit": "",
+      "label": "US export controls on advanced AI chips to China begin",
+      "source": "US BIS regulations",
+      "verified": false
+    },
+    {
+      "id": "resignation_date",
+      "value": "Nov 12, 2026",
+      "unit": "",
+      "label": "Reported resignation of CEO Jensen Huang; CFO Colette Kress named interim CEO",
+      "source": "CNBC / CNN reporting (Nov 2026)",
+      "verified": false
+    },
+    {
+      "id": "mcap_drop",
+      "value": 1.75,
+      "unit": "$T",
+      "label": "Reported ~$1.7–1.8 trillion market value drop from record high",
+      "source": "CNBC / CNN reporting (Nov 2026)",
+      "verified": false
+    },
+    {
+      "id": "doj_statement",
+      "value": "Unproven allegation",
+      "unit": "",
+      "label": "DOJ official stated it had not determined whether Huang was in a relationship with a Chinese spy (allegation only, unproven)",
+      "source": "CNBC / CNN reporting (Nov 2026)",
+      "verified": false
+    },
+    {
+      "id": "as_of_date",
+      "value": "as of Nov 14, 2026",
+      "unit": "",
+      "label": "Reporting cutoff date displayed on screen",
+      "source": "CNBC / CNN reporting (Nov 2026)",
+      "verified": false
+    }
+  ]
+}

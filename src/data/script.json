@@ -1,0 +1,62 @@
+{
+  "channel": "World Rupture",
+  "workingTitle": "Nvidia After Jensen Huang: How One Company Came to Run AI",
+  "asOfDate": "as of Nov 14, 2026",
+  "scenes": [
+    {
+      "id": "S0_ColdOpen",
+      "title": "The Fall",
+      "narration": "On November 12, 2026, Jensen Huang reportedly resigned as CEO of Nvidia. In the weeks leading up to the announcement, roughly 1.7 to 1.8 trillion dollars in market value vanished from its record high, with CFO Colette Kress named interim CEO. The company at the center of global artificial intelligence suddenly had no founder at the helm."
+    },
+    {
+      "id": "S1_Promise",
+      "title": "Nvidia After Jensen Huang: How One Company Came to Run AI",
+      "narration": "This isn't about the scandal. It's about how one company ended up running the machinery of AI, and what's at stake now. How did it start? Why can't anyone replace it? And what happens next?"
+    },
+    {
+      "id": "S2_Origins",
+      "title": "Three Engineers and a Bad Bet",
+      "narration": "It began in 1993 inside a San Jose Denny's diner. Three engineers—Jensen Huang, Chris Malachowski, and Curtis Priem—pooled early capital to design graphics chips. Their first chip, the NV1 in 1995, failed commercially, leaving the company close to running out of cash around 1996 and 1997. A last-chance bet on the RIVA 128 saved them, carrying Nvidia to its January 1999 IPO and the GeForce 256."
+    },
+    {
+      "id": "S3_GPU",
+      "title": "What a GPU Actually Is",
+      "narration": "To understand why Nvidia mattered beyond gaming, look inside the silicon. A traditional CPU relies on a handful of powerful cores handling complex tasks one after another. A GPU flips that architecture: thousands of smaller, simpler cores working in parallel across huge grids of numbers at once—originally built to shade millions of pixels simultaneously."
+    },
+    {
+      "id": "S4_CUDA",
+      "title": "The CUDA Bet",
+      "narration": "In November 2006, Nvidia made a costly wager called CUDA, releasing it in 2007 to let scientists program gaming chips for general math. For years, investors questioned the expense while universities quietly adopted it. Over time, CUDA, math libraries, and research ecosystems stacked into a towering software moat with immense switching costs."
+    },
+    {
+      "id": "S5_DeepLearning",
+      "title": "The Deep Learning Spark",
+      "narration": "Then came 2012. AlexNet won ImageNet with a 15.3 percent error rate versus 26.2 percent for the runner-up—trained on just two gaming GPUs. In 2016 Nvidia delivered the first DGX-1 to OpenAI, in 2017 the Transformer architecture arrived, and on November 30, 2022, ChatGPT ignited the modern AI wave."
+    },
+    {
+      "id": "S6_GoldRush",
+      "title": "The AI Gold Rush",
+      "narration": "Demand exploded overnight. Hyperscalers filled massive data centers with H100 clusters, and Nvidia climbed from one trillion dollars in May 2023 to two trillion in February 2024, three trillion in June 2024, four trillion in July 2025, and five trillion in October 2025—before the fracture arrived."
+    },
+    {
+      "id": "S7_Moat",
+      "title": "The Moat",
+      "narration": "Why can't rivals simply replace Nvidia? Three interlocked barriers protect it: CUDA software lock-in, high-speed networking bolstered by the 2019 Mellanox acquisition, and advanced chip fabrication concentrated in Taiwan at TSMC—while chip architecture is designed in the United States."
+    },
+    {
+      "id": "S8_Geopolitics",
+      "title": "Geopolitics",
+      "narration": "Starting in October 2022, US export controls restricted advanced AI chips bound for China, turning silicon supply lines into geopolitical levers. As reported in November 2026, a DOJ official stated it had not determined whether Huang was in a relationship with a suspected agent—an unproven allegation as of November 14, 2026."
+    },
+    {
+      "id": "S9_WhatNow",
+      "title": "What Now",
+      "narration": "Now interim CEO Colette Kress and the board face upcoming earnings and a successor search, while AMD, Google TPUs, and custom silicon from Nvidia's largest customers press their advantage. Can a company built around its founder maintain its technical edge?"
+    },
+    {
+      "id": "EndScreen",
+      "title": "World Rupture",
+      "narration": "World Rupture. Not financial advice."
+    }
+  ]
+}

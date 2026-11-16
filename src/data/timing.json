@@ -1,0 +1,17 @@
+{
+  "fps": 30,
+  "scenes": [
+    { "id": "S0_ColdOpen", "start": 0, "end": 35 },
+    { "id": "S1_Promise", "start": 35, "end": 65 },
+    { "id": "S2_Origins", "start": 65, "end": 145 },
+    { "id": "S3_GPU", "start": 145, "end": 200 },
+    { "id": "S4_CUDA", "start": 200, "end": 275 },
+    { "id": "S5_DeepLearning", "start": 275, "end": 350 },
+    { "id": "S6_GoldRush", "start": 350, "end": 430 },
+    { "id": "S7_Moat", "start": 430, "end": 500 },
+    { "id": "S8_Geopolitics", "start": 500, "end": 565 },
+    { "id": "S9_WhatNow", "start": 565, "end": 630 },
+    { "id": "EndScreen", "start": 630, "end": 645 }
+  ],
+  "transitionFrames": 18
+}
