@@ -20,8 +20,12 @@ OUTPUT_PATH=${2:-"out/video.mp4"}
 echo "Rendering composition: $COMPOSITION"
 echo "Output target: $OUTPUT_PATH"
 
+npx remotion browser ensure --chrome-mode=chrome-for-testing
+
 npx remotion render src/index.ts "$COMPOSITION" "$OUTPUT_PATH" \
-  --gl=angle \
+  --chrome-mode=chrome-for-testing \
+  --hardware-acceleration=if-possible \
+  --gl=angle-egl \
   --enable-multiprocess-on-linux \
   --concurrency=2 \
   --overwrite
