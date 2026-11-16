@@ -61,16 +61,14 @@
   },
   "scripts": {
     "dev": "remotion studio",
-    "render": "remotion render src/index.ts MyVideo out/video.mp4",
+    "render": "remotion render src/index.ts Main out/final.mp4 --codec=h264 --crf=18 --concurrency=2",
+    "render:scene": "remotion render src/index.ts",
+    "render:all": "remotion render src/index.ts Main out/part_01.mp4 --frames=0-1799 --codec=h264 --crf=18 --muted --concurrency=2 --gl=swangle",
+    "build:timing": "tsx scripts/build-timing.ts",
+    "gpu": "remotion gpu --chrome-mode=chrome-for-testing",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc",
-    "render:3d": "remotion render ThreeDAnimation out/ThreeDAnimation.mp4",
-    "render:3d:landscape": "remotion render ThreeDAnimationLandscape out/ThreeDAnimationLandscape.mp4",
-    "render:gpu": "remotion render ThreeDAnimation out/ThreeDAnimation.mp4 --gl=angle --enable-multiprocess-on-linux",
-    "render:map": "remotion render GeoMotion out/GeoMotion.mp4",
-    "render:map:cli": "node skills/geomotion-studio/scripts/render.mjs skills/geomotion-studio/examples/neon-cyber-demo.json out/GeoMotion-standalone.mp4",
-    "gen": "bun cli/cli.ts"
+    "lint": "eslint src && tsc"
   },
   "allowScripts": {
     "esbuild": false

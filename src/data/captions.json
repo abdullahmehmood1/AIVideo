@@ -24,6 +24,12 @@
   { "text": " its", "startMs": 22160, "endMs": 22420, "timestampMs": 22290, "confidence": 0.99 },
   { "text": " peak.", "startMs": 22420, "endMs": 23000, "timestampMs": 22710, "confidence": 0.99, "pageBreakAfter": true },
 
+  { "text": " This", "startMs": 35400, "endMs": 35720, "timestampMs": 35560, "confidence": 0.99 },
+  { "text": " isn't", "startMs": 35720, "endMs": 36080, "timestampMs": 35900, "confidence": 0.99 },
+  { "text": " about", "startMs": 36080, "endMs": 36440, "timestampMs": 36260, "confidence": 0.99 },
+  { "text": " the", "startMs": 36440, "endMs": 36660, "timestampMs": 36550, "confidence": 0.99 },
+  { "text": " scandal.", "startMs": 36660, "endMs": 37280, "timestampMs": 36970, "confidence": 0.99, "pageBreakAfter": true },
+
   { "text": " How", "startMs": 45000, "endMs": 45320, "timestampMs": 45160, "confidence": 0.99 },
   { "text": " did", "startMs": 45320, "endMs": 45580, "timestampMs": 45450, "confidence": 0.99 },
   { "text": " one", "startMs": 45580, "endMs": 45880, "timestampMs": 45730, "confidence": 0.99 },
@@ -32,6 +38,32 @@
   { "text": " up", "startMs": 46720, "endMs": 46950, "timestampMs": 46835, "confidence": 0.99 },
   { "text": " running", "startMs": 46950, "endMs": 47420, "timestampMs": 47185, "confidence": 0.99 },
   { "text": " AI?", "startMs": 47420, "endMs": 48000, "timestampMs": 47710, "confidence": 0.99, "pageBreakAfter": true },
+
+  { "text": " It", "startMs": 65400, "endMs": 65680, "timestampMs": 65540, "confidence": 0.99 },
+  { "text": " began", "startMs": 65680, "endMs": 66120, "timestampMs": 65900, "confidence": 0.99 },
+  { "text": " in", "startMs": 66120, "endMs": 66340, "timestampMs": 66230, "confidence": 0.99 },
+  { "text": " 1993", "startMs": 66340, "endMs": 66920, "timestampMs": 66630, "confidence": 0.99 },
+  { "text": " inside", "startMs": 66920, "endMs": 67380, "timestampMs": 67150, "confidence": 0.99 },
+  { "text": " a", "startMs": 67380, "endMs": 67540, "timestampMs": 67460, "confidence": 0.99 },
+  { "text": " San", "startMs": 67540, "endMs": 67880, "timestampMs": 67710, "confidence": 0.99 },
+  { "text": " Jose", "startMs": 67880, "endMs": 68320, "timestampMs": 68100, "confidence": 0.99 },
+  { "text": " diner.", "startMs": 68320, "endMs": 68900, "timestampMs": 68610, "confidence": 0.99, "pageBreakAfter": true },
+
+  { "text": " A", "startMs": 145500, "endMs": 145760, "timestampMs": 145630, "confidence": 0.99 },
+  { "text": " GPU", "startMs": 145760, "endMs": 146280, "timestampMs": 146020, "confidence": 0.99 },
+  { "text": " flips", "startMs": 146280, "endMs": 146720, "timestampMs": 146500, "confidence": 0.99 },
+  { "text": " sequential", "startMs": 146720, "endMs": 147380, "timestampMs": 147050, "confidence": 0.99 },
+  { "text": " design", "startMs": 147380, "endMs": 147860, "timestampMs": 147620, "confidence": 0.99 },
+  { "text": " into", "startMs": 147860, "endMs": 148180, "timestampMs": 148020, "confidence": 0.99 },
+  { "text": " massive", "startMs": 148180, "endMs": 148680, "timestampMs": 148430, "confidence": 0.99 },
+  { "text": " parallelism.", "startMs": 148680, "endMs": 149420, "timestampMs": 149050, "confidence": 0.99, "pageBreakAfter": true },
+
+  { "text": " In", "startMs": 200500, "endMs": 200780, "timestampMs": 200640, "confidence": 0.99 },
+  { "text": " November", "startMs": 200780, "endMs": 201320, "timestampMs": 201050, "confidence": 0.99 },
+  { "text": " 2006,", "startMs": 201320, "endMs": 201880, "timestampMs": 201600, "confidence": 0.99 },
+  { "text": " Nvidia", "startMs": 201880, "endMs": 202420, "timestampMs": 202150, "confidence": 0.99 },
+  { "text": " unveiled", "startMs": 202420, "endMs": 202960, "timestampMs": 202690, "confidence": 0.99 },
+  { "text": " CUDA.", "startMs": 202960, "endMs": 203560, "timestampMs": 203260, "confidence": 0.99, "pageBreakAfter": true },
 
   { "text": " AlexNet", "startMs": 298000, "endMs": 298580, "timestampMs": 298290, "confidence": 0.98 },
   { "text": " proved", "startMs": 298580, "endMs": 299040, "timestampMs": 298810, "confidence": 0.99 },
@@ -43,6 +75,28 @@
   { "text": " neural", "startMs": 301360, "endMs": 301840, "timestampMs": 301600, "confidence": 0.99 },
   { "text": " networks.", "startMs": 301840, "endMs": 302550, "timestampMs": 302195, "confidence": 0.99, "pageBreakAfter": true },
 
+  { "text": " Hyperscalers", "startMs": 351000, "endMs": 351680, "timestampMs": 351340, "confidence": 0.99 },
+  { "text": " filled", "startMs": 351680, "endMs": 352080, "timestampMs": 351880, "confidence": 0.99 },
+  { "text": " data", "startMs": 352080, "endMs": 352440, "timestampMs": 352260, "confidence": 0.99 },
+  { "text": " centers", "startMs": 352440, "endMs": 352960, "timestampMs": 352700, "confidence": 0.99 },
+  { "text": " with", "startMs": 352960, "endMs": 353240, "timestampMs": 353100, "confidence": 0.99 },
+  { "text": " H100", "startMs": 353240, "endMs": 353820, "timestampMs": 353530, "confidence": 0.99 },
+  { "text": " clusters.", "startMs": 353820, "endMs": 354480, "timestampMs": 354150, "confidence": 0.99, "pageBreakAfter": true },
+
+  { "text": " Three", "startMs": 431000, "endMs": 431380, "timestampMs": 431190, "confidence": 0.99 },
+  { "text": " barriers", "startMs": 431380, "endMs": 431920, "timestampMs": 431650, "confidence": 0.99 },
+  { "text": " lock", "startMs": 431920, "endMs": 432280, "timestampMs": 432100, "confidence": 0.99 },
+  { "text": " in", "startMs": 432280, "endMs": 432520, "timestampMs": 432400, "confidence": 0.99 },
+  { "text": " the", "startMs": 432520, "endMs": 432760, "timestampMs": 432640, "confidence": 0.99 },
+  { "text": " ecosystem.", "startMs": 432760, "endMs": 433480, "timestampMs": 433120, "confidence": 0.99, "pageBreakAfter": true },
+
+  { "text": " Export", "startMs": 501000, "endMs": 501480, "timestampMs": 501240, "confidence": 0.99 },
+  { "text": " controls", "startMs": 501480, "endMs": 502040, "timestampMs": 501760, "confidence": 0.99 },
+  { "text": " reshaped", "startMs": 502040, "endMs": 502620, "timestampMs": 502330, "confidence": 0.99 },
+  { "text": " global", "startMs": 502620, "endMs": 503080, "timestampMs": 502850, "confidence": 0.99 },
+  { "text": " silicon", "startMs": 503080, "endMs": 503620, "timestampMs": 503350, "confidence": 0.99 },
+  { "text": " routes.", "startMs": 503620, "endMs": 504200, "timestampMs": 503910, "confidence": 0.99, "pageBreakAfter": true },
+
   { "text": " Can", "startMs": 624000, "endMs": 624380, "timestampMs": 624190, "confidence": 0.99 },
   { "text": " a", "startMs": 624380, "endMs": 624560, "timestampMs": 624470, "confidence": 0.99 },
   { "text": " company", "startMs": 624560, "endMs": 625060, "timestampMs": 624810, "confidence": 0.99 },
@@ -52,5 +106,5 @@
   { "text": " founder", "startMs": 626180, "endMs": 626720, "timestampMs": 626450, "confidence": 0.99 },
   { "text": " keep", "startMs": 626720, "endMs": 627120, "timestampMs": 626920, "confidence": 0.99 },
   { "text": " its", "startMs": 627120, "endMs": 627420, "timestampMs": 627270, "confidence": 0.99 },
-  { "text": " edge?", "startMs": 627420, "endMs": 628100, "timestampMs": 627760, "confidence": 0.99 }
+  { "text": " edge?", "startMs": 627420, "endMs": 628100, "timestampMs": 627760, "confidence": 0.99, "pageBreakAfter": true }
 ]

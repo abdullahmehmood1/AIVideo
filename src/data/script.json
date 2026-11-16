@@ -2,6 +2,84 @@
   "channel": "World Rupture",
   "workingTitle": "Nvidia After Jensen Huang: How One Company Came to Run AI",
   "asOfDate": "as of Nov 14, 2026",
+  "disclaimer": "Not financial advice.",
+  "unprovenBanner": "Allegations reported in the news are unproven.",
+  "promiseQuestions": [
+    "How did it start?",
+    "Why can't anyone replace it?",
+    "What happens now?"
+  ],
+  "originsMilestones": [
+    { "factId": "founded_year", "shortLabel": "Founded in San Jose" },
+    { "factId": "nv1_year", "shortLabel": "NV1 Disappointment" },
+    { "factId": "cash_crisis_years", "shortLabel": "Near Cash Exhaustion" },
+    { "factId": "riva_128_year", "shortLabel": "RIVA 128 Survival" },
+    { "factId": "ipo_date", "shortLabel": "Nasdaq IPO" },
+    { "factId": "geforce_256_year", "shortLabel": "GeForce 256 GPU" }
+  ],
+  "originsLabels": {
+    "cashRunway": "Cash Runway",
+    "nv1": "NV1 Die",
+    "riva128": "RIVA 128 Die",
+    "geforce256": "GeForce 256 Die"
+  },
+  "gpuLabels": {
+    "cpuSide": "8 Sequential Cores",
+    "gpuSide": "Thousands of Parallel Cores",
+    "sphereLabel": "Parallel Pixel Shading"
+  },
+  "cudaLabels": {
+    "layers": ["Games", "CUDA", "Libraries", "Research"],
+    "chartTitle": "Developer Adoption vs Early Doubt",
+    "wallLabel": "Switching Cost"
+  },
+  "deepLearningLabels": {
+    "comparisonTitle": "ImageNet Top-5 Error",
+    "alexnetTag": "AlexNet (2 GPUs)",
+    "runnerUpTag": "Runner-Up",
+    "milestones": [
+      { "factId": "alexnet_year", "shortLabel": "AlexNet Breakthrough" },
+      { "factId": "dgx1_year", "shortLabel": "DGX-1 to OpenAI" },
+      { "factId": "transformers_year", "shortLabel": "Transformer Paper" },
+      { "factId": "chatgpt_date", "shortLabel": "ChatGPT Launch" }
+    ]
+  },
+  "goldRushLabels": {
+    "aisleLabel": "Hyperscale AI Clusters",
+    "staircaseLabel": "Market-Cap Milestones",
+    "milestones": [
+      { "factId": "mcap_1t", "date": "May 2023" },
+      { "factId": "mcap_2t", "date": "Feb 2024" },
+      { "factId": "mcap_3t", "date": "Jun 2024" },
+      { "factId": "mcap_4t", "date": "Jul 2025" },
+      { "factId": "mcap_5t", "date": "Oct 2025" }
+    ]
+  },
+  "moatLabels": {
+    "design": "Design (US)",
+    "manufacturing": "Manufacturing (TSMC)",
+    "software": "Software Lock-In",
+    "layers": ["Software (CUDA)", "Networking (Mellanox)", "Manufacturing Access"]
+  },
+  "geopoliticsLabels": {
+    "usHub": "US Export Controls",
+    "twHub": "Taiwan Foundry Node",
+    "cnHub": "Restricted AI Imports",
+    "timeline": [
+      { "factId": "export_controls_date", "tag": "Initial AI Chip Controls" },
+      { "factId": "mcap_5t", "tag": "Peak Valuation" },
+      { "factId": "resignation_date", "tag": "Reported CEO Resignation" }
+    ]
+  },
+  "whatNowLabels": {
+    "interimTag": "Interim CEO: Colette Kress",
+    "competitors": [
+      "AMD Instinct",
+      "Google TPUs",
+      "Custom Cloud Silicon",
+      "In-House AI Chips"
+    ]
+  },
   "scenes": [
     {
       "id": "S0_ColdOpen",

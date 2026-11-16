@@ -1,7 +1,9 @@
-import React from "react";
-import { AbsoluteFill, Audio, staticFile } from "remotion";
+import React, { useCallback } from "react";
+import { AbsoluteFill, Audio, interpolate, staticFile } from "remotion";
 import { linearTiming, TransitionSeries } from "@remotion/transitions";
+import type { Caption as RemotionCaption } from "@remotion/captions";
 import { ENABLE_AUDIO_PREVIEW } from "./config";
+import captionsData from "./data/captions.json";
 import timingData from "./data/timing.json";
 import { Caption } from "./components/Caption";
 import { crackWipe } from "./design/CrackWipe";
@@ -34,12 +36,57 @@ const SCENE_REGISTRY: Record<string, React.FC> = {
   EndScreen,
 };
 
+const captions = captionsData as RemotionCaption[];
+const BASE_MUSIC_VOL = 0.36;
+const DUCKED_MUSIC_VOL = 0.09; // ~-12 dB under active narration
+const RAMP_FRAMES = 10;
+
+export const computeMusicVolume = (frame: number, fps = 30): number => {
+  const rampMs = (RAMP_FRAMES / fps) * 1000;
+  const currentMs = (frame / fps) * 1000;
+  let minFactor = 1;
+
+  for (let i = 0; i < captions.length; i++) {
+    const c = captions[i];
+    if (currentMs >= c.startMs && currentMs <= c.endMs) {
+      return DUCKED_MUSIC_VOL;
+    }
+    if (currentMs >= c.startMs - rampMs && currentMs < c.startMs) {
+      const f = interpolate(
+        currentMs,
+        [c.startMs - rampMs, c.startMs],
+        [1, DUCKED_MUSIC_VOL / BASE_MUSIC_VOL],
+        { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
+      );
+      if (f < minFactor) minFactor = f;
+    } else if (currentMs > c.endMs && currentMs <= c.endMs + rampMs) {
+      const f = interpolate(
+        currentMs,
+        [c.endMs, c.endMs + rampMs],
+        [DUCKED_MUSIC_VOL / BASE_MUSIC_VOL, 1],
+        { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
+      );
+      if (f < minFactor) minFactor = f;
+    }
+  }
+  return BASE_MUSIC_VOL * minFactor;
+};
+
 export const Main: React.FC = () => {
   const { fps, scenes, transitionFrames } = timingData;
+  const musicVolCallback = useCallback(
+    (f: number) => computeMusicVolume(f, fps),
+    [fps],
+  );
 
   return (
     <AbsoluteFill style={{ backgroundColor: colors.bgDeep, overflow: "hidden" }}>
-      {ENABLE_AUDIO_PREVIEW && <Audio src={staticFile("audio/vo.wav")} />}
+      {ENABLE_AUDIO_PREVIEW && (
+        <>
+          <Audio src={staticFile("audio/vo.wav")} />
+          <Audio src={staticFile("audio/music.mp3")} volume={musicVolCallback} />
+        </>
+      )}
 
       <TransitionSeries>
         {scenes.map((scene, index) => {
